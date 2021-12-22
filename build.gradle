@@ -1,3 +1,15 @@
+plugins {
+  id "org.sonarqube" version "3.3"
+}
+
+sonarqube {
+  properties {
+    property "sonar.projectKey", "MitchVera_rate-my-cat"
+    property "sonar.organization", "mitchvera"
+    property "sonar.host.url", "https://sonarcloud.io"
+  }
+}
+
 buildscript {
     ext {
         springBootVersion = '2.5.6'
